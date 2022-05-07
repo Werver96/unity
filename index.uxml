@@ -1,0 +1,117 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=83b1686193e186948bee17ccc95b420c&amp;type=3#style" />
+    <ui:VisualElement name="body" class="body" style="border-top-left-radius: 10px; background-color: rgb(59, 59, 71); color: rgb(255, 255, 255);">
+        <ui:VisualElement name="head" class="head" style="width: 438px; height: 30px;">
+            <ui:Label text="Команды пилоту" display-tooltip-when-elided="true" name="head_text" class="head_text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bonus_panel" class="panel">
+            <ui:VisualElement name="panel_elem" class="panel_elem panel_elem_active">
+                <ui:IMGUIContainer name="panel_img" class="panel_elem_img panel_img_1" />
+                <ui:Label text="100" display-tooltip-when-elided="true" name="panel_text" class="panel_elem_text" style="color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="panel_elem" class="panel_elem">
+                <ui:Label text="100" display-tooltip-when-elided="true" name="panel_text" class="panel_elem_text" />
+                <ui:IMGUIContainer name="panel_img" class="panel_elem_img panel_img_2" />
+            </ui:VisualElement>
+            <ui:VisualElement name="vertical_line" class="panel_line" />
+            <ui:VisualElement name="panel_elem" class="panel_elem">
+                <ui:Label text="58" display-tooltip-when-elided="true" name="panel_text" class="panel_elem_text panel_img_3" style="background-image: none;" />
+                <ui:IMGUIContainer name="panel_img" class="panel_elem_img panel_img_3" />
+            </ui:VisualElement>
+            <ui:VisualElement name="vertical_line" class="panel_line" />
+            <ui:VisualElement name="panel_elem" class="panel_elem">
+                <ui:Label text="58" display-tooltip-when-elided="true" name="panel_text" class="panel_elem_text" />
+                <ui:IMGUIContainer name="panel_img" class="panel_elem_img panel_img_4" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="content" class="content">
+            <ui:VisualElement name="overtaking" class="content_row overtaking">
+                <ui:VisualElement name="text" class="content_text">
+                    <ui:Label text="Обгон" display-tooltip-when-elided="true" name="Label" style="-unity-font-style: bold; color: rgb(255, 255, 255); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="button_1" class="content_buttons button_default default">
+                    <ui:GroupBox name="button_img" class="buttons_img">
+                        <ui:VisualElement name="button_icon" class="button_icon overtaking_icon_1" />
+                    </ui:GroupBox>
+                    <ui:VisualElement name="button_bonus" class="button_bonus overtaking_button_1">
+                        <ui:IMGUIContainer name="bonus_icon" class="overtaking_button_1_icon_1" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="50" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:IMGUIContainer name="bonus_icon" class="overtaking_button_1_icon_2" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="56" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="button_1" class="content_buttons button_blocked blocked">
+                    <ui:GroupBox name="button_img" class="buttons_img">
+                        <ui:VisualElement name="button_icon" class="button_icon overtaking_icon_2" />
+                    </ui:GroupBox>
+                    <ui:VisualElement name="button_bonus" class="button_bonus overtaking_button_2">
+                        <ui:IMGUIContainer name="bonus_icon" class="overtaking_button_2_icon_1" style="background-image: url(&apos;project://database/Assets/UI/iInProgress.png?fileID=2800000&amp;guid=e59c5ad50e43eb54a9ed8f77362db8f6&amp;type=3#iInProgress&apos;);" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="0:05" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="tires" class="content_row tires">
+                <ui:VisualElement name="text" class="content_text">
+                    <ui:Label text="Шины" display-tooltip-when-elided="true" name="Label" style="-unity-font-style: bold; color: rgb(255, 255, 255); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="button_1" class="content_buttons button_default default">
+                    <ui:GroupBox name="button_img" class="buttons_img">
+                        <ui:VisualElement name="button_icon" class="button_icon tires_icon_1" />
+                    </ui:GroupBox>
+                    <ui:VisualElement name="button_bonus" class="button_bonus tires_button_1 tires_button">
+                        <ui:IMGUIContainer name="bonus_icon" class="tires_button_1_icon_1" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="50" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="bonus_value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="button_1" class="content_buttons button_default button_blocked_no_bonus blocked_no_bonus">
+                    <ui:GroupBox name="button_img" class="buttons_img">
+                        <ui:VisualElement name="button_icon" class="button_icon tires_icon_2" />
+                    </ui:GroupBox>
+                    <ui:VisualElement name="button_bonus" class="button_bonus tires_button_2 tires_button">
+                        <ui:IMGUIContainer name="bonus_icon" class="tires_button_1_icon_1" style="width: 16px; height: 16px;" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="80" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="engine" class="content_row engine">
+                <ui:VisualElement name="text" class="content_text">
+                    <ui:Label text="Двигатель" display-tooltip-when-elided="true" name="Label" style="-unity-font-style: bold; color: rgb(255, 255, 255); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="button_1" class="content_buttons button_default unactive">
+                    <ui:GroupBox name="button_img" class="buttons_img">
+                        <ui:VisualElement name="button_icon" class="button_icon engine_icon_1" />
+                    </ui:GroupBox>
+                    <ui:VisualElement name="button_bonus" class="button_bonus tires_button_1 tires_button">
+                        <ui:IMGUIContainer name="bonus_icon" class="engine_button_1_icon_1" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="50" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="bonus_value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="button_1" class="content_buttons button_default button_blocked_no_bonus active">
+                    <ui:GroupBox name="button_img" class="buttons_img buttons_img_active">
+                        <ui:VisualElement name="button_icon" class="button_icon engine_icon_2" />
+                    </ui:GroupBox>
+                    <ui:VisualElement name="button_bonus" class="button_bonus tires_button_2 tires_button">
+                        <ui:IMGUIContainer name="bonus_icon" class="engine_button_1_icon_2" style="width: 16px; height: 16px;" />
+                        <ui:VisualElement name="bonus_value">
+                            <ui:Label text="0:25" display-tooltip-when-elided="true" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

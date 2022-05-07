@@ -1,0 +1,350 @@
+.body {
+    width: 440px;
+    height: 296px;
+}
+
+.head {
+    border-left-color: rgb(171, 175, 187);
+    border-right-color: rgb(171, 175, 187);
+    border-top-color: rgb(171, 175, 187);
+    border-bottom-color: rgb(171, 175, 187);
+    height: 32px;
+    background-color: rgb(171, 175, 187);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 440px;
+}
+
+.head_text {
+    -unity-font-style: bold;
+    -unity-text-align: upper-left;
+    margin-left: 16px;
+    margin-top: 8px;
+    color: rgb(35, 35, 49);
+}
+
+.panel {
+    height: 32px;
+    width: 440px;
+    flex-direction: row;
+    background-color: rgb(59, 59, 71);
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    -unity-slice-bottom: 0;
+    box-shadow: 0 0 5px 2px red;
+    border-bottom-width: 0.2px;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.panel_elem {
+    width: 96px;
+    height: 32px;
+}
+
+.panel_elem_active {
+    border-bottom-right-radius: 10px;
+    background-color: rgb(69, 70, 83);
+}
+
+.panel_elem_text {
+    justify-content: flex-start;
+    align-items: auto;
+    -unity-text-align: upper-center;
+    margin-top: 9px;
+}
+
+.panel_elem_img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 8px;
+}
+
+.panel_img_1 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Authority.png?fileID=2800000&guid=90b3bf820f6b4ef4cb5d81f83a83b5c9&type=3#iconBonuses-Authority');
+    height: 16px;
+    width: 16px;
+    left: 16px;
+    top: 8px;
+}
+
+.panel_img_2 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Driver.png?fileID=2800000&guid=46aa0b05e801d4c4591e41c27f59ad95&type=3#iconBonuses-Driver');
+}
+
+.panel_img_3 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Tires.png?fileID=2800000&guid=e23e12d432b9f9641879da05800cdcaa&type=3#iconBonuses-Tires');
+    border-bottom-width: 0;
+    border-left-color: rgb(255, 255, 255);
+}
+
+.panel_img_4 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Engine.png?fileID=2800000&guid=d4e1d0ae3399943449c28bb762e1119b&type=3#iconBonuses-Engine');
+}
+
+.panel_elem_3 {
+}
+
+.panel_line {
+    width: 1px;
+    height: 16px;
+    margin-top: 8px;
+    background-color: rgb(196, 196, 196);
+}
+
+.content {
+    border-top-width: 3px;
+    border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+.content_row {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 74px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.overtaking {
+    border-bottom-color: rgb(196, 196, 196);
+    border-bottom-width: 1px;
+    border-left-color: rgb(196, 196, 196);
+    border-right-color: rgb(196, 196, 196);
+    border-top-color: rgb(196, 196, 196);
+}
+
+.content_text {
+    justify-content: center;
+    margin-right: auto;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.content_buttons {
+    width: 104px;
+    height: 42px;
+    margin-left: 24px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.default {
+    background-color: rgba(35, 35, 49, 0.5);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.blocked {
+    background-color: rgba(255, 100, 100, 0.2);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    opacity: 0.8;
+    color: rgb(35, 35, 49);
+}
+
+.blocked_no_bonus {
+    color: rgb(255, 100, 100);
+    opacity: 0.8;
+    background-color: rgba(35, 35, 49, 0.5);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.unactive {
+    opacity: 0.5;
+    background-color: rgba(35, 35, 49, 0.5);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.active {
+    background-color: rgba(171, 233, 126, 0.5);
+    color: rgb(35, 35, 49);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.buttons_img {
+    width: 42px;
+    height: 42px;
+    border-left-color: rgb(224, 224, 224);
+    border-right-color: rgb(224, 224, 224);
+    border-top-color: rgb(224, 224, 224);
+    border-bottom-color: rgb(224, 224, 224);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_icon {
+    width: 24px;
+    height: 24px;
+    background-image: none;
+}
+
+.button_bonus {
+    width: 42px;
+    height: 42px;
+}
+
+.overtaking_icon_1 {
+    background-image: url('project://database/Assets/UI/RaceOrders.png?fileID=2800000&guid=986a904382706894483a3727fcb26271&type=3#RaceOrders');
+}
+
+.overtaking_icon_2 {
+    background-image: url('project://database/Assets/UI/RaceOrders1.png?fileID=2800000&guid=737c5b402af2b4e42b28809813df92cf&type=3#RaceOrders1');
+}
+
+.overtaking_button_1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 4px;
+}
+
+.overtaking_button_1_icon_1 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Driver.png?fileID=2800000&guid=46aa0b05e801d4c4591e41c27f59ad95&type=3#iconBonuses-Driver');
+    width: 16px;
+    height: 16px;
+}
+
+.overtaking_button_1_icon_2 {
+    width: 16px;
+    height: 16px;
+    background-image: url('project://database/Assets/UI/iconBonuses-Authority.png?fileID=2800000&guid=90b3bf820f6b4ef4cb5d81f83a83b5c9&type=3#iconBonuses-Authority');
+}
+
+.overtaking_button_2 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.overtaking_button_2_icon_1 {
+    width: 16px;
+    height: 16px;
+    background-image: url('project://database/Assets/UI/iconBonuses-Authority.png?fileID=2800000&guid=90b3bf820f6b4ef4cb5d81f83a83b5c9&type=3#iconBonuses-Authority');
+}
+
+.buttons_img_defoult {
+}
+
+.buttons_img_active {
+    border-left-color: rgb(171, 233, 126);
+    border-right-color: rgb(171, 233, 126);
+    border-top-color: rgb(171, 233, 126);
+    border-bottom-color: rgb(171, 233, 126);
+    background-color: rgb(69, 70, 83);
+}
+
+.tires {
+    border-bottom-width: 1px;
+    border-left-color: rgb(196, 196, 196);
+    border-right-color: rgb(196, 196, 196);
+    border-top-color: rgb(196, 196, 196);
+    border-bottom-color: rgb(196, 196, 196);
+}
+
+.tires_icon_1 {
+    background-image: url('project://database/Assets/UI/RaceOrders2.png?fileID=2800000&guid=d76979bf3a999e44592381443b00764f&type=3#RaceOrders2');
+}
+
+.tires_icon_2 {
+    background-image: url('project://database/Assets/UI/RaceOrders%20(1).png?fileID=2800000&guid=5bf060cdf03d0634f92e8439e11ec09a&type=3#RaceOrders (1)');
+}
+
+.tires_button {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.tires_button_1_icon_1 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Tires.png?fileID=2800000&guid=e23e12d432b9f9641879da05800cdcaa&type=3#iconBonuses-Tires');
+    width: 16px;
+    height: 16px;
+}
+
+.tires_button_2_icon_1 {
+    width: 16px;
+    height: 16px;
+}
+
+.engine {
+}
+
+.engine_icon_1 {
+    background-image: url('project://database/Assets/UI/RaceOrders23.png?fileID=2800000&guid=676b9eaf89951a6479f75ea923a9d4ac&type=3#RaceOrders23');
+}
+
+.engine_icon_2 {
+    background-image: url('project://database/Assets/UI/RaceOrders%20(3).png?fileID=2800000&guid=7b3f746613763fa4b97cbaf0c2122339&type=3#RaceOrders (3)');
+}
+
+.engine_button_1_icon_1 {
+    background-image: url('project://database/Assets/UI/iconBonuses-Tires.png?fileID=2800000&guid=e23e12d432b9f9641879da05800cdcaa&type=3#iconBonuses-Tires');
+    width: 16px;
+    height: 16px;
+}
+
+.engine_button_1_icon_2 {
+    background-image: url('project://database/Assets/UI/iInProgress.png?fileID=2800000&guid=e59c5ad50e43eb54a9ed8f77362db8f6&type=3#iInProgress');
+    width: 16px;
+    height: 16px;
+}
+
+.default:hover .buttons_img {
+    background-color: rgb(89, 90, 105);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.default:focus .buttons_img {
+    background-color: rgb(255, 0, 2);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-right-color: rgb(171, 175, 187);
+    border-top-color: rgb(171, 175, 187);
+    border-bottom-color: rgb(171, 175, 187);
+    border-left-color: rgb(0, 0, 0);
+}
+
+.default:active .buttons_img {
+    background-color: rgb(255, 0, 2);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-right-color: rgb(171, 175, 187);
+    border-top-color: rgb(171, 175, 187);
+    border-bottom-color: rgb(171, 175, 187);
+    border-left-color: rgb(0, 0, 0);
+}
